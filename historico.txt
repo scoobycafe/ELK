@@ -1,0 +1,199 @@
+    1  yum upgrade
+    2  clear
+    3  vi /etc/ssh/sshd_config 
+    4  service sshd restart
+    5  clear
+    6  ifconfig
+    7  ip a
+    8  clear
+    9  shutdown -fr now
+   10  clear
+   11  ifconfig
+   12  yum search ifconfig
+   13  yum install net-tools
+   14  ifconfig
+   15  shutdown -fh now
+   16  clear
+   17  yum update && yum upgrade -y
+   18  clear
+   19  java -version
+   20  ls
+   21  clear
+   22  wget -c https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.5.rpm
+   23  yum install wget
+   24  ervice iptables status
+   25  service iptables status
+   26  clear
+   27  systemctl status firewalld 
+   28  setenforce 0
+   29  vi /etc/sysconfig/selinux 
+   30  systemctl status firewalld 
+   31  systemctl stop firewalld 
+   32  systemctl disable firewalld 
+   33  systemctl status firewalld 
+   34  clear
+   35  systemctl status firewalld 
+   36  clear
+   37  ls
+   38  wget -c https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.5.rpm
+   39  wget -c https://artifacts.elastic.co/downloads/logstash/logstash-5.6.5.rpm
+   40  wget -c https://artifacts.elastic.co/downloads/kibana/kibana-5.6.5-x86_64.rpm
+   41  clear
+   42  ls
+   43  rpm -i jdk-8u111-linux-x64.rpm 
+   44  java -version
+   45  clear
+   46  ls
+   47  rpm -i elasticsearch-5.6.5.rpm 
+   48  systemctl enable elasticsearch
+   49  clear
+   50  vi /etc/elasticsearch/elasticsearch.yml 
+   51  systemctl status elasticsearch
+   52  systemctl start elasticsearch
+   53  systemctl status elasticsearch
+   54  free -m
+   55  clear
+   56  curl -X GET http://localhost:9200
+   57  clear
+   58  rpm -i logstash-5.6.5.rpm 
+   59  systemctl status logstash
+   60  systemctl enabled logstash
+   61  systemctl start logstash
+   62  yum search locate
+   63  yum install mlocate
+   64  clear
+   65  updatedb
+   66  locate logstash
+   67  locate logstash | grep bin
+   68  clear
+   69  /usr/share/logstash/bin/logstash
+   70  clear
+   71  cd /etc/logstash/
+   72  ls
+   73  vi logstash-simple.conf
+   74  /usr/share/logstash/bin/logstash -f /etc/logstash/logstash-simple.conf 
+   75  clear
+   76  systemctl status logstash
+   77  systemctl start logstash
+   78  systemctl status logstash
+   79  clear
+   80  ls
+   81  clear
+   82  cd
+   83  clear
+   84  systemctl status elasticsearch
+   85  clear
+   86  ls
+   87  rpm -i kibana-5.6.5-x86_64.rpm 
+   88  cd /etc/kibana/
+   89  ls
+   90  vi kibana.yml 
+   91  systemctl status kibana
+   92  systemctl start kibana
+   93  systemct status kibana
+   94  systemctl status kibana
+   95  clear
+   96  cd
+   97  set enforce 0
+   98  clear
+   99  yum search links
+  100  yum install elinks
+  101  clear
+  102  elinks
+  103  clear
+  104  yum -y install epel-release
+  105  yum -y install nginx
+  106  free -m
+  107  df -h
+  108  shutdown -fh now
+  109  clear
+  110  watch -n5 systemctl status nginx
+  111  systemctl start nginx
+  112  clear
+  113  systemctl start nginx
+  114  clear
+  115  service logstash configtest
+  116  clear
+  117  service logstash configtest
+  118  systemctl configtest logstash
+  119  systemctl start nginx
+  120  yum -y install nginx
+  121  clear
+  122  yum -y install httpd-tools
+  123  clear
+  124  htpasswd -c /etc/nginx/htpasswd.users kibanaadmin
+  125  vi /etc/nginx/nginx.conf
+  126  vi /etc/nginx/conf.d/kibana.conf
+  127  systemctl start nginx
+  128  systemctl enable nginx
+  129  systemctl status nginx
+  130  systemctl start nginx
+  131  vi /etc/nginx/nginx.conf
+  132  systemctl start nginx
+  133  systemctl status nginx
+  134  vi /etc/nginx/nginx.conf
+  135  systemctl start nginx
+  136  systemctl status nginx
+  137  vi /etc/nginx/nginx.conf
+  138  cd /etc/nginx/
+  139  ls
+  140  cp nginx.conf ~
+  141  clear
+  142  vi /etc/nginx/nginx.conf
+  143  clear
+  144  vi /etc/nginx/conf.d/kibana.conf 
+  145  systemctl status nginx
+  146  systemctl enable nginx
+  147  systemctl status nginx
+  148  systemctl restart nginx
+  149  systemctl start nginx
+  150  clear
+  151  systemctl status nginx
+  152  clear
+  153  cd
+  154  vi /etc/nginx/conf.d/kibana.conf 
+  155  systemctl restart nginx
+  156  systemctl status nginx
+  157  reboot
+  158  systemctl status nginx
+  159  systemctl status kibana
+  160  clear
+  161  systemctl enable kibana
+  162  systemctl start kibana
+  163  systemctl status kibana
+  164  cd /etc/nginx/
+  165  ls
+  166  hostname
+  167  vi /etc/hostname
+  168  hostname logserver
+  169  vi /etc/hosts
+  170  ping logserver
+  171  clear
+  172  cd /etc/nginx/conf.d/
+  173  ls
+  174  updatedb
+  175  locate htpasswd
+  176  vi /etc/nginx/conf.d/kibana.conf 
+  177  systemctl restart nginx
+  178  systemctl status nginx
+  179  systemctl restart kibana
+  180  systemctl status kibana
+  181  clear
+  182  ls
+  183  cat kibana.conf 
+  184  clear
+  185  cd
+  186  clear
+  187  hostname
+  188  clear
+  189  ip a
+  190  clear
+  191  vi /etc/sysconfig/network-scripts/ifcfg-enp0s3 
+  192  ip a
+  193  hostname
+  194  clear
+  195  ifconfig
+  196  ifdown enp0s3
+  197  clear
+  198  history | less
+  199  history > historico.txt
